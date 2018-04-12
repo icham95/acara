@@ -1,0 +1,20 @@
+<div style="padding:10px;">
+  <h2>Simulation</h2>
+  <button class="btns" (click)="saveCheckouts()">checkout</button>
+  <div *ngIf="checkouts.length == 0">
+    empty, just choose vendor and services what you want!
+  </div>
+  <ul *ngIf="loadingSave == false">
+    <li *ngFor="let item of checkouts">
+      {{ item.name }} -
+      <span *ngIf="item.category == 1">vendor</span>
+      <span *ngIf="item.category == 2">services</span>
+      |
+      <button class="btns" (click)="removeCheckout(item)">remove</button>
+    </li>
+  </ul>
+
+  <div *ngIf="loadingSave">
+    Loading...
+  </div>
+</div>

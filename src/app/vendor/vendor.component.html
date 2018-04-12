@@ -1,0 +1,17 @@
+<div *ngIf="loading">
+  loading
+</div>
+<div class="container">
+  <div class="box" *ngFor="let item of vendors | async">
+    <div class="title">
+      {{ item.name }}
+    </div>
+    <div class="description">
+      {{ item.description }}
+    </div>
+    <div class="actions">
+      <button class="btns btn" (click)="addCheckout(item)">Choose</button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,76 @@
+.header {
+  display: grid;
+  grid-template-areas: 'item1 item2';
+  grid-auto-columns: 20% 80%;
+  background-color: dodgerblue;
+}
+
+.header > div:first-child {
+  align-self: center;
+  justify-self: center;
+  font-size: 33px;
+  font-weight: bold;
+  color: white;
+}
+
+.header > div:last-child {
+  align-self: center;
+}
+
+.link-title {
+  color: white;
+  text-decoration: none;
+}
+.link-title:hover {
+  color: darkblue;
+}
+.item1 {
+  grid-area: item1;
+}
+.link {
+  grid-area: item2;
+}
+.link > a {
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link > a:hover {
+  background-color: darkblue;
+}
+
+.active-link {
+  background-color: darkblue;
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    grid-template-areas:
+      'item1'
+      'item2';
+    grid-auto-columns: 100% 100%;
+  }
+
+  .item1 {
+    grid-area: item1;
+  }
+
+  .link {
+    grid-area: item2;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  link {
+    width: 100%;
+  }
+  .link > a {
+    display: block;
+    text-align: center;
+  }
+}

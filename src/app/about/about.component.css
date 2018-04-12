@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-areas: 'item1';
+}
+
+.item1 {
+  grid-area: item1;
+  text-align: center;
+  justify-self: center;
+  font-size: 24px;
+}

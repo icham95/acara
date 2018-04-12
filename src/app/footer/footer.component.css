@@ -1,0 +1,14 @@
+.footer {
+  display: grid;
+  grid-template-areas: 'item1';
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 75px;
+  font-size: 14px;
+}
+
+.item1 {
+  grid-area: item1;
+  align-self: center;
+  justify-self: center;
+}

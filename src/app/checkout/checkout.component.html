@@ -1,0 +1,24 @@
+<div *ngIf="loading">
+  loading...
+</div>
+
+<div class="container">
+  <div class="box" *ngFor="let item of checkoutsDB | async">
+    <div>
+      ON: {{ timestampToTime(item.createdAt) | uppercase}}
+    </div>
+
+    <div class="status">
+      STATUS:
+      <span *ngIf="item.status == 0"> Reviewing </span>
+      <span *ngIf="item.status == 1"> Procces </span>
+    </div>
+    <ul>
+      <b>PLAN :</b>
+      <li *ngFor="let subitem of item.transactions | async">
+        - {{ subitem.name }}
+      </li>
+    </ul>
+
+  </div>
+</div>
