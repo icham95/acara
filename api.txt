@@ -1,2 +1,0 @@
-https://firestore.googleapis.com/v1beta1/projects/acara-e3d92/databases/vendors/documents/vendors?&key=(AIzaSyDiRzU_AxkAjhrT52MvscWR8EwgHLYDoNE)
-https://firestore.googleapis.com/v1beta1/projects/acara-e3d92/databases/(default)/documents/vendors/&key=(AIzaSyDiRzU_AxkAjhrT52MvscWR8EwgHLYDoNE)
